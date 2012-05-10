@@ -2,7 +2,7 @@
 ### Github markdown parser
 ### usage:
 ### Parse markdown file into html
-### $ ruby gmd.rb file.md >> file.html 
+### $ ruby gmd.rb file.md >> file.html
 ########################################
 
 #!/usr/bin/env ruby
