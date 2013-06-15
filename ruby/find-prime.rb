@@ -25,20 +25,20 @@ end
 # 再實現如何找到最小除數（從2找起）
 
 def smallest_divisor(n)
-	find_divisor(n, 2)
+  find_divisor(n, 2)
 end
 
 # 由於質數本身是自己的最小除數 => 找到質數
 
 # n is prime iff n is its own smallest divisor
 def prime?(n)
-	return smallest_divisor(n) == n
+  return smallest_divisor(n) == n
 end
 
 # 從給定的區間找一下，把非質數過濾掉
 
 def find_prime(m=2, n)
-	(m..n).find_all {|i|  prime?(i) == true }
+  (m..n).find_all {|i|  prime?(i) == true }
 end
 
 # find_prime(100000) => about 5 sec
