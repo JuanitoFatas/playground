@@ -6,12 +6,12 @@ end
 
 # can b divided by a?
 def divides?(a, b)
-  return b.remainder(a) == 0  
+  return b.remainder(a) == 0
 end
 
 # based on the fact that if n is not prime
 # it must have a divisor less than or equal to sqrt(n)
-# results in O(sqrt(n)) 
+# results in O(sqrt(n))
 def find_divisor(n, test_divisor)
   if square(test_divisor) > n
   	return n
@@ -38,7 +38,7 @@ end
 # 從給定的區間找一下，把非質數過濾掉
 
 def find_prime(m=2, n)
-	(m..n).find_all {|i|  prime?(i) == true } 
+	(m..n).find_all {|i|  prime?(i) == true }
 end
 
 # find_prime(100000) => about 5 sec
