@@ -77,5 +77,8 @@ Juanito Fatas Huang's Playground
 
 --
 
+> One of the conclusions that we reached was that the "object" need not be a primitive notion in a programming language; one can build objects and their behaviour from little more than assignable value cells and good old lambda expressions. -- Guy Steele on the design of Scheme
+
+--
 
 

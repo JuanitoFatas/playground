@@ -41,4 +41,7 @@ def find_prime(m=2, n)
   (m..n).find_all {|i|  prime?(i) == true }
 end
 
-# find_prime(100000) => about 5 sec
+unknown = 30000 # 20^9
+
+find_prime(m=2, unknown)
+

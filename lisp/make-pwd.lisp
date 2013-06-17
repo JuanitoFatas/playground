@@ -15,6 +15,19 @@
                   when (= p 2) collect (code-char (+ number (random 10))))
             'string)))
 
+(defun gen-pwd2 (length)
+  (let ((capital (char-code #\A))
+        (small (char-code #\a))
+        (number (char-code #\0))
+        (symbol (char-code #\!)))
+    (coerce (loop for i from 0 to length
+              and p = (random 4)
+                  when (= p 0) collect (code-char (+ capital (random 26)))
+                  when (= p 1) collect (code-char (+ small (random 26)))
+                  when (= p 2) collect (code-char (+ number (random 10)))
+                  when (= p 3) collect (code-char (+ symbol (random 16))))
+            'string)))
+
 (defconstant *month-names*
   '(jan feb mar apr may jun jul aug sep oct nov dec))
 
