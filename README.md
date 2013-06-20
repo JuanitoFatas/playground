@@ -81,4 +81,6 @@ Juanito Fatas Huang's Playground
 
 --
 
+> Patterns mean "I have run out of language." — Rich Hickey
 
+--
